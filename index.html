@@ -1,65 +1,49 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-    <title>Student Feedback</title>
+    <title>College Placement Portal</title>
 
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #e8f0fe;
             margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f3f6fa;
         }
 
         header {
-            background-color: #1e3a8a;
+            background-color: #173b6c;
             color: white;
             text-align: center;
             padding: 25px;
         }
 
         .container {
-            width: 60%;
+            width: 80%;
             margin: 30px auto;
+        }
+
+        .box {
             background-color: white;
-            padding: 30px;
+            padding: 25px;
+            margin-bottom: 20px;
             border-radius: 10px;
+            box-shadow: 0 0 8px rgba(0,0,0,0.15);
         }
 
-        label {
-            display: block;
-            margin-top: 15px;
-            font-weight: bold;
+        h2 {
+            color: #173b6c;
         }
 
-        input,
-        select,
-        textarea {
-            width: 100%;
-            padding: 10px;
-            margin-top: 5px;
-            box-sizing: border-box;
+        p {
+            line-height: 1.6;
         }
 
-        textarea {
-            height: 100px;
-        }
-
-        button {
-            margin-top: 20px;
-            padding: 12px 30px;
-            background-color: #1e3a8a;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-
-        footer {
-            background-color: #1e3a8a;
+        .contact {
+            background-color: #173b6c;
             color: white;
             text-align: center;
-            padding: 15px;
+            padding: 20px;
+            border-radius: 10px;
         }
     </style>
 </head>
@@ -67,53 +51,49 @@
 <body>
 
 <header>
-    <h1>Student Feedback System</h1>
-    <h2>ABC College of Engineering</h2>
+    <h1>College Placement Portal</h1>
+    <p>ABC College of Engineering</p>
 </header>
 
 <div class="container">
 
-    <h2>Student Feedback Form</h2>
+    <div class="box">
+        <h2>College Information</h2>
+        <p><b>College:</b> ABC College of Engineering</p>
+        <p><b>Department:</b> Computer Science and Engineering</p>
+    </div>
 
-    <form>
+    <div class="box">
+        <h2>Company: TCS</h2>
+        <p><b>Job Role:</b> Graduate Engineer Trainee</p>
+        <p><b>Eligibility:</b> B.Tech / B.E graduates</p>
+        <p><b>Salary:</b> ₹7 LPA</p>
+        <p><b>Application Deadline:</b> 25 October 2026</p>
+    </div>
 
-        <label>Course Name</label>
-        <input type="text" placeholder="Enter course name">
+    <div class="box">
+        <h2>Company: Infosys</h2>
+        <p><b>Job Role:</b> Systems Engineer</p>
+        <p><b>Eligibility:</b> B.Tech / B.E graduates</p>
+        <p><b>Salary:</b> ₹6.5 LPA</p>
+        <p><b>Application Deadline:</b> 28 October 2026</p>
+    </div>
 
-        <label>Faculty Name</label>
-        <input type="text" placeholder="Enter faculty name">
+    <div class="box">
+        <h2>Company: Wipro</h2>
+        <p><b>Job Role:</b> Project Engineer</p>
+        <p><b>Eligibility:</b> B.Tech / B.E graduates</p>
+        <p><b>Salary:</b> ₹5.5 LPA</p>
+        <p><b>Application Deadline:</b> 30 October 2026</p>
+    </div>
 
-        <label>Student Name</label>
-        <input type="text" placeholder="Enter student name">
-
-        <label>Register Number</label>
-        <input type="text" placeholder="Enter register number">
-
-        <label>Department</label>
-        <input type="text" placeholder="Enter department">
-
-        <label>Rating</label>
-        <select>
-            <option>Excellent</option>
-            <option>Very Good</option>
-            <option>Good</option>
-            <option>Average</option>
-            <option>Poor</option>
-        </select>
-
-        <label>Feedback / Comments</label>
-        <textarea placeholder="Enter your feedback"></textarea>
-
-        <button type="submit">Submit Feedback</button>
-
-    </form>
+    <div class="contact">
+        <h3>Placement Contact</h3>
+        <p>Email: placement@abccollege.edu</p>
+        <p>Phone: +91 9876543210</p>
+    </div>
 
 </div>
 
-<footer>
-    Student Feedback System © 2026
-</footer>
-
 </body>
-
 </html>
