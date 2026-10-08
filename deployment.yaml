@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: college-notice-board
+  name: student-feedback
 spec:
-  replicas: 2
+  replicas: 3
   selector:
     matchLabels:
-      app: college-notice-board
+      app: student-feedback
   template:
     metadata:
       labels:
-        app: college-notice-board
+        app: student-feedback
     spec:
       containers:
-      - name: college-notice-board
-        image: sarves816/college-notice-board:latest
+      - name: student-feedback
+        image: sarves816/student-feedback:latest
         ports:
         - containerPort: 80
 
@@ -22,12 +22,12 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: college-notice-board-service
+  name: student-feedback-service
 spec:
   type: NodePort
   selector:
-    app: college-notice-board
+    app: student-feedback
   ports:
   - port: 80
     targetPort: 80
-    nodePort: 30010
+    nodePort: 30011
