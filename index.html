@@ -2,11 +2,10 @@
 <html>
 
 <head>
-    <title>College Notice Board</title>
+    <title>Student Feedback</title>
 
     <style>
         body {
-            text-align: center;
             font-family: Arial, sans-serif;
             background-color: #e8f0fe;
             margin: 0;
@@ -15,72 +14,105 @@
         header {
             background-color: #1e3a8a;
             color: white;
+            text-align: center;
             padding: 25px;
         }
 
         .container {
-            width: 80%;
+            width: 60%;
             margin: 30px auto;
-        }
-
-        .notice {
             background-color: white;
-            margin: 20px;
-            padding: 20px;
+            padding: 30px;
             border-radius: 10px;
         }
 
-        .date {
-            color: gray;
+        label {
+            display: block;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+
+        input,
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            box-sizing: border-box;
+        }
+
+        textarea {
+            height: 100px;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 12px 30px;
+            background-color: #1e3a8a;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
         }
 
         footer {
             background-color: #1e3a8a;
             color: white;
-            padding: 20px;
+            text-align: center;
+            padding: 15px;
         }
     </style>
 </head>
 
 <body>
 
-    <header>
-        <h1>ABC College of Engineering</h1>
-        <h2>Department of Computer Science and Engineering</h2>
-    </header>
+<header>
+    <h1>Student Feedback System</h1>
+    <h2>ABC College of Engineering</h2>
+</header>
 
-    <div class="container">
+<div class="container">
 
-        <h2>College Notice Board</h2>
+    <h2>Student Feedback Form</h2>
 
-        <div class="notice">
-            <h3>Internal Assessment Examination</h3>
-            <p class="date">Date: 15 October 2026</p>
-            <p>Internal Assessment examinations will begin from 15 October 2026.</p>
-        </div>
+    <form>
 
-        <div class="notice">
-            <h3>Hackathon Registration</h3>
-            <p class="date">Date: 20 October 2026</p>
-            <p>Students can register for the upcoming college hackathon.</p>
-        </div>
+        <label>Course Name</label>
+        <input type="text" placeholder="Enter course name">
 
-        <div class="notice">
-            <h3>Placement Training Program</h3>
-            <p class="date">Date: 25 October 2026</p>
-            <p>Placement training sessions will be conducted for final-year students.</p>
-        </div>
+        <label>Faculty Name</label>
+        <input type="text" placeholder="Enter faculty name">
 
-        <h3>Contact Information</h3>
+        <label>Student Name</label>
+        <input type="text" placeholder="Enter student name">
 
-        <p>Email: cse@abccollege.edu</p>
-        <p>Phone: +91 9876543210</p>
+        <label>Register Number</label>
+        <input type="text" placeholder="Enter register number">
 
-    </div>
+        <label>Department</label>
+        <input type="text" placeholder="Enter department">
 
-    <footer>
-        <p>ABC College of Engineering © 2026</p>
-    </footer>
+        <label>Rating</label>
+        <select>
+            <option>Excellent</option>
+            <option>Very Good</option>
+            <option>Good</option>
+            <option>Average</option>
+            <option>Poor</option>
+        </select>
+
+        <label>Feedback / Comments</label>
+        <textarea placeholder="Enter your feedback"></textarea>
+
+        <button type="submit">Submit Feedback</button>
+
+    </form>
+
+</div>
+
+<footer>
+    Student Feedback System © 2026
+</footer>
 
 </body>
 
